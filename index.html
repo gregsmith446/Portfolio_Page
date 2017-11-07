@@ -8,6 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <style>
 </style>
 
@@ -17,62 +18,70 @@
 <!-- Navbar with dropdown -->    
 
 <nav class="navbar navbar-inverse navbar-fixed-top nav_spacing">
-  <div class="container-fluid">
-    <div class="navbar-header">
-         <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="index.html">gs designs</a>
-    </div>
-    <ul class="nav navbar-nav">
-         <li class="active"><a href="index.html">Home</a></li>
-         <li><a href="#About">About</a></li>
-         <li><a href="#Portfolio">Portfolio</a></li>
-         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#Contact">Contact<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="mailto:gregsmith446@gmail.com">Email</a></li>
-                <li><a href="https://twitter.com/g_smittyy">Twitter</a></li>
+            <a href="#" class="navbar-brand">Greg Smith</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                    <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#Contact">Contact<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mailto:gregsmith446@gmail.com">Email</a></li>
+                        <li><a href="https://twitter.com/g_smittyy">Twitter</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-    </ul>
-  </div>
+        </div>    
 </nav>
-
 <!--begin landing page -->
 
-<div class="container-fluid pages">
+<div class="container-fluid full_page_width" id="home">
     <img src="images/1Home.jpg" class="img-responsive" alt="coffee computer">
-                <h1>gs designs</h1>
-                <h2>Modern, Custom Made Websites</h2>
-            <div class="buttons">
-                    <a href="https://twitter.com/g_smittyy" class="btn btn-default" target="_blank">Twitter</a>
-                    <a href="https://github.com/gregsmith446" class="btn btn-default">GitHub</a>
-                    <a href="https://www.linkedin.com/in/gregory-smith-a94370b0/" class="btn btn-default">LinkedIn</a>
-                    <a href="https://www.freecodecamp.org/gregsmith446" class="btn btn-default">FreeCodeCamp</a>
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="company_name">gs designs</h1>
+            <h2 class="slogan">Modern, Custom Made Websites</h2>
+        </div>  
+    </div>
+        <div class="col-md-6">
+            <a href="https://twitter.com/g_smittyy" class="btn btn-default" target="_blank">Twitter</a>
+            <a href="https://github.com/gregsmith446" class="btn btn-default">GitHub</a>
+            <a href="https://www.linkedin.com/in/gregory-smith-a94370b0/" class="btn btn-default">LinkedIn</a>
+            <a href="https://www.freecodecamp.org/gregsmith446" class="btn btn-default">FreeCodeCamp</a>
+        </div>
+    </div>    
 </div>
+   
     
 <!--begin About page -->
     
-<div class="container-fluid pages" id="About">
-    <img src="images/2About.jpg" alt="">
+<div class="container-fluid full_page_width" id="About">
+    <img src="images/2About.jpg" class="img-responsive" alt="Laptop">
 </div>
 
 <!--begin Porfolio page -->
 
-<div class="container-fluid pages" id="Portfolio">
-    <img src="images/3Portfolio.jpg" alt="">
-
+<div class="container-fluid full_page_width" id="Portfolio">
+    <img src="images/3Portfolio.jpg" class="img-responsive" alt="Waterfire">
 </div>
 
 <!--begin Contact page -->
 
-<div class="container-fluid pages" id="Contact">
-    <img src="images/4Contact.jpg" alt="">
-
+<div class="container-fluid full_page_width" id="Contact">
+    <img src="images/4Contact.jpg" class="img-responsive" alt="Macbook">
+        <blockquote>
+            <p>"The Website Was Superb.  Crafted to Fit Our Company's Needs Perfectly."</p>
+            <small><cite>Fortune 500 Client</cite></small>
+        </blockquote>
 </div>
 
 <!--Footer is below-->
@@ -81,7 +90,7 @@
   <p>gs designs 2017</p>
 </div>
 
-<!--jQuery and Bootstrap javascript-->
+<!--jQuery and Bootstrap javascript CDNs-->
 
 
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -94,12 +103,6 @@
 
 
 <!--
-
-BUTTONS
-<a href="https://twitter.com/g_smittyy" class="btn btn-default" target="_blank">Twitter</a>
-<a href="https://github.com/gregsmith446" class="btn btn-default">GitHub</a>
-<a href="https://www.linkedin.com/in/gregory-smith-a94370b0/" class="btn btn-default">LinkedIn</a>
-<a href="https://www.freecodecamp.org/gregsmith446" class="btn btn-default">FreeCodeCamp</a>
 
 USE THIS FOR PROFILE PICTURE
 <img src="/examples/images/125x125.jpg" class="img-circle" alt="Circular Image">
@@ -133,10 +136,7 @@ USE THIS FOR PORTFOLIO IMAGES
     </div>
 </div>
 
-USE THIS FOR CONNECT/EMAIL PAGE
-<blockquote>
-    	<p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
-    	<small>by <cite>Albert Einstein</cite></small>
-    </blockquote>
+USE THIS FOR CONNECT/EMAIL PAGE AS A FAKE TESTIMONIAL
+
 -->
 
